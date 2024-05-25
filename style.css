@@ -76,11 +76,15 @@ body {
 
 .navbar a {
     font-size: 14px;
-} 
+}
 
 .navbar #menu a {
     color: #111118;
     font-weight: 500;
+}
+
+.medium {
+    display: none;
 }
 
 .navbar .projects {
@@ -263,7 +267,7 @@ body {
 .why-choose-us .cont {
     align-items: center;
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 .why-choose-us img {
@@ -335,7 +339,7 @@ body {
 
 .reviews .profile-details {
     width: 30%;
-    min-width: 300px;
+    min-width: 260px;
     border-radius: 24px;
     padding: 30px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -462,8 +466,20 @@ footer .copyright {
     text-align: center;
 }
 
+/* Mobile Devices */
+@media (max-width: 1024px) {
+    .why-choose-us img {
+        display: none;
+    }
+}
 
-@media (max-width: 1020px) {
+@media (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    /* Navigation Bar */
     .navbar #menu {
         position: fixed;
         top: 0;
@@ -479,6 +495,133 @@ footer .copyright {
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0,15);
         transition: all 0.3s ease;
     }
+
+    .navbar #menu.active {
+        right: 0;
+    }
+
+    .navbar #bar {
+        display: flex;
+    }
+    .navbar #close {
+        position: absolute;
+        top: 30px;
+        display: flex;
+    }
+
+    .navbar #menu a {
+        color: #fff;
+    }
+
+    .navbar .projects {
+        display: none;
+    }
+
+    .medium {
+        display: block;
+    }
+
+
+
+    /* Quote */
+
+    .quote .img {
+        display: none;
+    }
+
+    /* Our Services */
+
+    #our-services .cont {
+        gap: 2rem;
+    }
+
+    #our-services {
+        gap: 3rem;
+    }
+
+    /* Why choose Us */
+    .why-choose-us {
+        gap: 3rem;
+    }
+    
+    .why-choose-us img {
+        display: none;
+    }
+
+    /* Footer */
+    #contact {
+        width: 100%;
+    }
+
+    .reviews .profile-details {
+        width: 100%;
+    }
+    
 }
 
 
+@media (max-width: 640px) {
+    h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .hero {
+        height: auto;
+        margin: 10% 5%;
+    }
+
+    .hero .container {
+        display: none;
+    }
+
+    .hero .text-content {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+
+    /* Quote */
+
+    .quote .img {
+        display: none;
+    }
+
+    /* Our Services */
+
+    #our-services .cont {
+        gap: 2rem;
+    }
+
+    #our-services {
+        gap: 3rem;
+    }
+
+    /* Why choose Us */
+    .why-choose-us {
+        gap: 3rem;
+    }
+    
+    .why-choose-us img {
+        display: none;
+    }
+
+    .why-choose-us .cont {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Footer */
+    #contact {
+        width: 100%;
+    }
+
+    .reviews .profile-details {
+        width: 100%;
+    }
+    
+}
