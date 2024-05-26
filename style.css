@@ -60,6 +60,7 @@ body {
     background-color: #fff;
     z-index: 1000;
     padding: 1.5% 5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .navbar .logo {
@@ -320,6 +321,10 @@ body {
     rotate: 180deg;
 }
 
+.recent-projects a {
+    color: #fff;
+}
+
 /* Reviews */
 
 .reviews {
@@ -466,6 +471,24 @@ footer .copyright {
     text-align: center;
 }
 
+/* Projects Page */
+.project-message {
+    background: #111118;
+    color: #fff;
+}
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.showcase img {
+    border: 4px solid #111118;
+}
+
+
 /* Mobile Devices */
 @media (max-width: 1024px) {
     .why-choose-us img {
@@ -559,8 +582,11 @@ footer .copyright {
     
 }
 
-
 @media (max-width: 640px) {
+    .navbar {
+        padding: 3% 5%;
+    }
+
     h1 {
         font-size: 30px;
         line-height: 35px;
@@ -621,6 +647,10 @@ footer .copyright {
     }
 
     .reviews .profile-details {
+        width: 100%;
+    }
+
+    .showcase img {
         width: 100%;
     }
     
