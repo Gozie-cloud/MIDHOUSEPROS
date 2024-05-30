@@ -60,13 +60,13 @@ body {
     background-color: #fff;
     z-index: 1000;
     padding: 1.5% 5%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .navbar .logo {
-    color: #111118;
-    font-weight: 700;
-    cursor: pointer;
+    width: 200px;
+}
+.navbar img {
+    width: 100%;
 }
 
 .navbar #menu {
